@@ -1,0 +1,41 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 150%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    border: thin solid black;
+    border-radius: 2rem ;
+    padding: 1rem;
+}
+
+
+.baslik{
+    color: grey;
+    font-size:2Rem;
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+}
