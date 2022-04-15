@@ -65,6 +65,8 @@ if(kullaniciPuani==0){
     sonucMesaji.style.color="Green";
     sonucMesaji.style.fontSize="4rem"
 
+    
+
 
 
 
