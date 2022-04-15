@@ -64,3 +64,75 @@
 //Fonksiyon yöntemiyle OBJE oluşturma.Artık "new" anahtar kelimesiyle 
 //belirttiğimiz şablonda bir obje oluşturabiliriz.
 
+// function human(isim,yas){
+//     this.isim=isim;
+//     this.yas=yas;
+
+// }
+
+// const Cansu= new human("Cansu",28);
+// console.log(Cansu);
+
+// Cansu.yeniOzellik="Cansu tatlıyı çok sever";
+// console.log(Cansu.yeniOzellik);
+
+//Object Destructuring
+//Destructuring bir obje veya dizi içinden her bir elemanın
+//alınıp yeni bir değişken içine atanması.
+
+//const sayilar={sayi1:15 ,sayi2:25}
+//console.log(sayilar.sayi1) //gibi uğraşmaktansa
+ //Uzun yol
+// const sayi1=sayilar.sayi1;
+// const sayi2= sayilar.sayi2;
+
+// //Kısa Yol yani Destructuring
+//  const {sayi1,sayi2} = sayilar;
+
+// console.log(sayi1);
+
+// const cikarma= ({sayi1,sayi2}) => {
+//     return sayi1-sayi2;
+
+// }
+// console.log(cikarma(sayilar))
+
+// //Destr işlemi yapan fonksiyona gönderilen obje eksik prop içeriyorsa 
+
+// let bolme =({sayi1,sayi2=2}) =>
+// {
+//     return sayi1/sayi2;
+// }
+
+// let sayiObjesi={
+//     sayi1:8
+
+// }
+// console.log(bolme(sayiObjesi))
+ 
+// //Aynı durum tam tersi için de geçerli
+
+// let bolme2 =({sayi1}) =>
+// {
+//     return sayi1/sayi2
+// }
+// const ornek= {
+//     sayi1:10,
+//     sayi2:2
+// }
+// console.log(bolme2(ornek))
+
+//Bu tarz durumların çözümünde Spreading Operator
+
+// const toplama =({sayi1,sayi2}) => {
+//     return sayi1+sayi2+sayi3+sayi4+sayi5
+// }
+
+// const sayilar = {
+//     sayi1:5,
+//     sayi2:10,
+//     sayi3:15,
+//     sayi4:20,
+//     sayi5:25
+// }
+// console.log(toplama(sayilar))
